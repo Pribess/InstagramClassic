@@ -1,6 +1,6 @@
 @font-face {
     font-family: "W95FA";
-    src: url(../asset/W95FA.otf);
+    src: local("W9FA"), url(../asset/W95FA.ttf) format("ttf")
 }
 
 html {
