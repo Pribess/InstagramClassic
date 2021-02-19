@@ -1,0 +1,50 @@
+{
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --mac && electron-builder build --win --x64"
+  },
+  "main": "./src/main.js",
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1"
+  },
+  "name": "instagram",
+  "version": "1.0.0",
+  "build": {
+    "productName": "Instagram",
+    "appId": "com.pribess.InstagramClassic",
+    "asar": false,
+    "protocols": {
+      "name": "Instagram",
+      "schemes": [
+        "Instagram"
+      ]
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "zip"
+        }
+      ],
+      "icon": "./res/icon.png"
+    },
+    "dmg": {
+      "title": "projectname",
+      "icon": "./res/icon.png"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "./res/icon.png"
+    }
+  },
+  "dependencies": {
+    "instagram-web-api": "^2.2.2"
+  }
+}
