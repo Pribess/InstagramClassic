@@ -23,7 +23,8 @@ document.getElementById("login").addEventListener("click", () => {
     togglebtn(1);
     const id = document.getElementById("id").value;
     const password = document.getElementById("password").value;
-    remote.getGlobal("login")(id, password).then(alert);
+    const result = remote.getGlobal("login")(id, password);
+    alert(result);
 });
 
 function togglebtn(index) {

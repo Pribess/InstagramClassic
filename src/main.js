@@ -1,7 +1,6 @@
 const {app, BrowserWindow, ipcRenderer, ipcMain} = require("electron");
 const { remote } = require("electron/renderer");
 const Instagram = require("instagram-web-api");
-
 let client;
 let myprofile;
 let mainwindow;
@@ -29,5 +28,5 @@ app.on("window-all-closed", () => {
 
 global.login = (username, password) => {
     client = new Instagram({username: username, password: password});
-    return client.login().then(client.getProfile());
+    
 }
