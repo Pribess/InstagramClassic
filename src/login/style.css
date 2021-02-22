@@ -90,14 +90,18 @@ body {
 
 .id {
     width: 230px;
+    height: 17px;
     border: none;
-    font-size: 17px;
+    font-size: 13px;
+    outline: none;
 }
 
 .password {
     width: 230px;
+    height: 17px;
     border: none;
-    font-size: 17px;
+    font-size: 13px;
+    outline: none;
 }
 
 .logo {
