@@ -8,10 +8,10 @@
     "electron": "^11.2.3",
     "electron-builder": "^22.9.1"
   },
-  "name": "instagramclassic",
+  "name": "instagram",
   "version": "1.0.0",
   "build": {
-    "productName": "InstagramClassic",
+    "productName": "Instagram",
     "appId": "com.pribess.InstagramClassic",
     "asar": false,
     "protocols": {

@@ -63,10 +63,49 @@ body {
 
 .exit {
     margin-right: 4px;
+    background-image: url("../asset/exit.png");
+    background-repeat: no-repeat;
+    border: none;
+    vertical-align: middle;
+    background-size: 100% 100%;
+    outline: none;
+    border-right: solid 2px #000000;
+    border-bottom: solid 2px #000000;
+}
+
+.exit:active {
+    border-right: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+    background-image: url("../asset/exit_pushed.png");
+}
+
+.minimize {
+    background-image: url("../asset/minimize.png");
+    background-repeat: no-repeat;
+    border: none;
+    vertical-align: middle;
+    background-size: 100% 100%;
+    outline: none;
+    border-right: solid 2px #000000;
+    border-bottom: solid 2px #000000;
+}
+
+.minimize:active {
+    border-right: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+    background-image: url("../asset/minimize_pushed.png");
 }
 
 .maximize {
     margin-right: 2px;
+    background-image: url("../asset/maxmize.png");
+    background-repeat: no-repeat;
+    border: none;
+    vertical-align: middle;
+    background-size: 100% 100%;
+    outline: none;
+    border-right: solid 2px #000000;
+    border-bottom: solid 2px #000000;
 }
 
 .inborder {
@@ -137,11 +176,25 @@ body {
     border-bottom: solid 1px #000000;
 }
 
+.wrapper1:active {
+    border-top: solid 1px #000000;
+    border-left: solid 1px #000000;
+    border-right: solid 1px #dedede;
+    border-bottom: solid 1px #dedede;
+}
+
 .wrapper2 {
     border-left: solid 1px #ffffff;
     border-top: solid 1px #ffffff;
     border-right: solid 1px #818181;
     border-bottom: solid 1px #818181;
+}
+
+.wrapper2:active {
+    border-left: solid 1px #818181;
+    border-top: solid 1px #818181;
+    border-right: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
 }
 
 .login {
@@ -150,6 +203,8 @@ body {
     width: 120px;
     height: 20px;
 }
+
+
 
 .error {
     color: red;

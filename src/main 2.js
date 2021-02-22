@@ -29,6 +29,10 @@ app.on("window-all-closed", () => {
 
 global.login = (username, password) => {
     client = new Instagram({username: username, password: password});
-    
+    myprofile = client.getProfile();
     return client.login().then(client.getProfile());
+}
+
+global.readFile = (path) => {
+    mainwindow.loadFile(path);
 }

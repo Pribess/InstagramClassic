@@ -23,13 +23,13 @@ document.getElementById("login").addEventListener("click", () => {
     togglebtn(1);
     const id = document.getElementById("id").value;
     const password = document.getElementById("password").value;
-    const result = remote.getGlobal("login")(id, password).then((profile) => {
+    remote.getGlobal("login")(id, password).then((profile) => {
         if (profile.authenticated) {
-            window.location.href = "../main/index.html";
+            window.location.href = "../main/index.html"
         } else {
             togglebtn(2);
         }
-    })
+    });
 });
 
 function togglebtn(index) {
@@ -46,13 +46,13 @@ function togglebtn(index) {
                 togglebtn(1);
                 const id = document.getElementById("id").value;
                 const password = document.getElementById("password").value;
-                const result = remote.getGlobal("login")(id, password).then((profile) => {
+                remote.getGlobal("login")(id, password).then((profile) => {
                     if (profile.authenticated) {
-                        window.location.href = "../main/index.html";
+                        win.loadFile
                     } else {
                         togglebtn(2);
                     }
-                })
+                });
             });
             break;
     }
