@@ -1,7 +1,8 @@
 {
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder build --mac && electron-builder build --win --x64"
+    "build": "electron-builder build --mac && electron-builder build --win --x64",
+    "build:win": "electron-builder build --win --x64"
   },
   "main": "./src/main.js",
   "devDependencies": {

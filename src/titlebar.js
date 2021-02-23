@@ -1,8 +1,6 @@
 const remote = require("electron").remote;
-const {ipcMain, ipcRenderer} = require("electron");
-
 const win = remote.BrowserWindow.getFocusedWindow();
-const app = remote.app;
+
 
 
 document.addEventListener('keydown', (event) => {
@@ -11,10 +9,10 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-document.getElementById("exit").addEventListener("click", () => {
+function exit() {
     win.close();
-});
+}
 
-document.getElementById("minimize").addEventListener("click", () => {
+function minimize() {
     win.minimize();
-});
+}

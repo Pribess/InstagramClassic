@@ -1,23 +1,5 @@
-const remote = require("electron").remote;
-const {ipcMain, ipcRenderer} = require("electron");
-
-const win = remote.BrowserWindow.getFocusedWindow();
 const app = remote.app;
 
-
-document.addEventListener('keydown', (event) => {
-    if(event.keyCode==123){
-        win.webContents.toggleDevTools();
-    }
-});
-
-function exit() {
-    win.close();
-}
-
-function minimize() {
-    win.minimize();
-}
 
 document.getElementById("login").addEventListener("click", () => {
     togglebtn(1);
