@@ -1,2 +1,0 @@
-# InstagramClassic
-InstagramClassic
