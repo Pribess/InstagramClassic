@@ -30,7 +30,11 @@
       "icon": "./res/icon.png"
     },
     "win": {
-      "target": ["zip", "portable", "nsis"],
+      "target": [
+        "zip",
+        "portable",
+        "nsis"
+      ],
       "icon": "./res/icon.png"
     },
     "nsis": {
