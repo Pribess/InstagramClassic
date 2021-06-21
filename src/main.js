@@ -16,7 +16,6 @@ app.on("ready", () => {
             enableRemoteModule:true
         }
     });
-
     mainwindow = win;
     win.removeMenu();
     win.setResizable(false);
